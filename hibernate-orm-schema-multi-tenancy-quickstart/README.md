@@ -2,7 +2,7 @@
 
 This guide demonstrates how your Hibernate ORM application can support multitenancy so that you can serve multiple tenants from a single application. 
 
-When serving multiple customers from a same application (e.g.: SaaS), each customer is a tenant with a separate database or a separate schema in the same database. 
+When serving multiple customers from a same application (e.g.: SaaS), each customer is a tenant with a separate schema in the same database. 
 
 ## Requirements
 
@@ -32,15 +32,6 @@ Launch the Maven build on the checked out sources of this demo:
 ### SCHEMA Multitenancy
 
 Approach that uses a single database (default datasource) with two schemas ('base' and 'mycompany') for storing the tenant's data.
-
-#### Prepare a single PostgreSQL instance
-
-Make sure you have a PostgreSQL instance running. To set up a PostgreSQL database with Docker:
-
-> docker run -it --rm=true --name quarkus_test -e POSTGRES_USER=quarkus_test -e POSTGRES_PASSWORD=quarkus_test -e POSTGRES_DB=quarkus_test -p 5432:5432 postgres:13.3
-
-Connection properties for the Agroal datasource are defined in the standard Quarkus configuration file, [src/main/resources/application.properties](src/main/resources/application.properties). The database schemas are created using [Flyway](https://quarkus.io/guides/flyway) and the configuration can be found in 
-[src/main/resources/schema/V1.0.0__create_fruits.sql](src/main/resources/schema/V1.0.0__create_fruits.sql).
 
 #### Start Quarkus in development mode (Profile 'development')
 
