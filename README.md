@@ -54,7 +54,7 @@ See [CONTRIBUTING](CONTRIBUTING.md) for how to build these examples.
 * [Hibernate ORM with Panache and RESTEasy](./hibernate-orm-panache-quickstart): Exposing a CRUD service over REST using Panache to connect to a PostgreSQL database
 * [Hibernate ORM with Panache and RESTEasy in Kotlin](./hibernate-orm-panache-kotlin-quickstart): Exposing a CRUD service over REST using Panache and kotlin to connect to a PostgreSQL database
 * [Hibernate ORM REST Data with Panache](./hibernate-orm-rest-data-panache-quickstart): Automatically generate the CRUD endpoints for your entities and repositories using Hibernate ORM with Panache.
-* [Hibernate ORM Multitenancy](./hibernate-orm-multi-tenancy-quickstart): Multitenant CRUD service over REST using Hibernate ORM to connect to a PostgreSQL database (schema or database approach)
+* [Hibernate ORM Schema Multitenancy](./hibernate-orm-schema-multi-tenancy-quickstart): Multitenant CRUD service over REST using Hibernate ORM to connect to different schemas in a single PostgreSQL database
 * [Hibernate Search + Elasticsearch](./hibernate-search-orm-elasticsearch-quickstart): Index your Hibernate entities in Elasticsearch to get full text search
 * [Infinispan Client](./infinispan-client-quickstart): How to use Infinispan Client. Covers creating caches and simple get/put
 * [Artemis JMS](./jms-quickstart): How to use the Artemis JMS extension

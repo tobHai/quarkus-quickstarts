@@ -1,5 +1,6 @@
 package org.acme.hibernate.orm;
 
+import io.quarkus.hibernate.orm.PersistenceUnitExtension;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 
@@ -11,6 +12,7 @@ import io.vertx.ext.web.RoutingContext;
 
 @RequestScoped
 @Unremovable
+@PersistenceUnitExtension
 public class CustomTenantResolver implements TenantResolver {
 
     private static final Logger LOG = Logger.getLogger(CustomTenantResolver.class);
